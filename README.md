@@ -17,21 +17,20 @@ It automates every stage of the machine-learning lifecycle — from model traini
 ---
 
 ## ⚙️ System Architecture
+```
 mlops_takehome/
 ├── notebooks/
-│ ├── train_classification.py # Trains and logs model to MLflow
-│ └── inference_batch.py # Loads registered model and performs inference
+│   ├── train_classification.py # Trains and logs model to MLflow
+│   └── inference_batch.py # Loads registered model and performs inference
 ├── src/cli/
-│ ├── config.py # Loads Databricks credentials and environment variables
-│ ├── workspace.py # Handles notebook uploads to Databricks workspace
-│ ├── jobs.py # Creates & configures Databricks Jobs programmatically
-│ └── main.py # CLI entrypoint
+│   ├── config.py # Loads Databricks credentials and environment variables
+│   ├── workspace.py # Handles notebook uploads to Databricks workspace
+│   ├── jobs.py # Creates & configures Databricks Jobs programmatically
+│   └── main.py # CLI entrypoint
 ├── mlops_cli.py # Top-level CLI runner for local deployment
 ├── requirements.txt
 └── .github/workflows/deploy.yml # GitHub Actions workflow for CI/CD to production
-
-
----
+```
 
 ## 🧩 Local Setup Instructions
 
